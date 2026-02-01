@@ -3,7 +3,7 @@
 set -e
 
 echo "================================"
-echo "   StreamFlow Quick Installer  "
+echo "   GFStream Quick Installer  "
 echo "================================"
 echo
 
@@ -48,7 +48,7 @@ fi
 
 echo "📥 Clone repository..."
 git clone https://github.com/bangtutorial/streamflow
-cd streamflow
+cd GFStream
 
 echo "⚙️ Installing dependencies..."
 npm install
@@ -70,8 +70,8 @@ else
     sudo npm install -g pm2
 fi
 
-echo "▶️ Starting StreamFlow..."
-pm2 start app.js --name streamflow
+echo "▶️ Starting GFStream..."
+pm2 start app.js --name GFStream
 pm2 save
 
 echo
